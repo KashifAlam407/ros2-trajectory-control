@@ -8,7 +8,15 @@ The implementation is tested in simulation using **Turtlebot3 in Gazebo** and vi
 
 The system is designed in a **modular ROS2 architecture**, where each node performs a specific task. This approach improves readability, debugging, and scalability.
 
----
+-----------------------------------------------------------------------
+
+### Video Demonstration
+
+[![ros2_trajectory_control](https://img.youtube.com/vi/QMzAnXUuIg8/0.jpg)](https://www.youtube.com/watch?v=QMzAnXUuIg8)
+
+▶ Click the image above to watch the full demo video on YouTube.
+
+-----------------------------------------------------------------------
 
 # Code Repository
 
@@ -408,23 +416,6 @@ Possible algorithms:
 In fact, **I have already implemented the Dynamic Window Approach (DWA) in one of my previous robotics projects**, where a local planner evaluates safe velocity commands based on robot dynamics and nearby obstacles. That implementation helped me understand how local trajectory sampling and cost evaluation can be used to safely navigate around obstacles.
 
 This current project focuses on trajectory smoothing and tracking, but the architecture can easily be extended to integrate such local planning methods for real-world navigation.
-
------------------------------------------------------------------------
-
-## Results & Demo
-
-### Simulation Output (Gazebo + RViz)
-
-<img src="assets/trajectory_control_demo.png" width="700"/>
-
------------------------------------------------------------------------
-
-### Video Demonstration
-
-[![ros2_trajectory_control](https://img.youtube.com/vi/QMzAnXUuIg8/0.jpg)](https://www.youtube.com/watch?v=QMzAnXUuIg8)
-
-▶ Click the image above to watch the full demo video on YouTube.
-
 
 
 The demonstration video shows:
