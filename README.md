@@ -383,7 +383,7 @@ The final implementation and testing were performed manually in simulation.
 
 ---
 
-# Extra Credit: Extending the System for Obstacle Avoidance
+# Extending the System for Obstacle Avoidance
 
 Obstacle avoidance can be added by integrating sensor data from LiDAR or depth cameras.
 
@@ -401,15 +401,31 @@ Steps:
 
 Possible algorithms:
 
-- Dynamic Window Approach (DWA)
+- Dynamic Window Approach (DWA), 
 - Model Predictive Control
 - Potential Fields
 
-These methods allow the robot to adjust its motion while avoiding obstacles.
+In fact, **I have already implemented the Dynamic Window Approach (DWA) in one of my previous robotics projects**, where a local planner evaluates safe velocity commands based on robot dynamics and nearby obstacles. That implementation helped me understand how local trajectory sampling and cost evaluation can be used to safely navigate around obstacles.
 
----
+This current project focuses on trajectory smoothing and tracking, but the architecture can easily be extended to integrate such local planning methods for real-world navigation.
 
-# Demonstration Video
+-----------------------------------------------------------------------
+
+## Results & Demo
+
+### Simulation Output (Gazebo + RViz)
+
+<img src="assets/trajectory_control_demo.png" width="700"/>
+
+-----------------------------------------------------------------------
+
+### Video Demonstration
+
+[![ros2_trajectory_control](https://img.youtube.com/vi/QMzAnXUuIg8/0.jpg)](https://www.youtube.com/watch?v=QMzAnXUuIg8)
+
+▶ Click the image above to watch the full demo video on YouTube.
+
+
 
 The demonstration video shows:
 
